@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Stock Market Trading Simulator
+![Screenshot (41)](https://github.com/JL1172/Stock-Market-Trading-App/assets/130790079/4524b25a-bbf4-4c43-bf19-4332ebae788e)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Stock Market Trading Simulator, a web application that allows you to practice trading with real-time data from Finnhub's APIs and Coingecko's API. This project provides you with a dynamic account balance, a total equity balance, and an overall net loss or net gain balance, all of which are updated in real time as you buy or sell shares. Whether you're a seasoned trader looking to refine your strategies or a beginner wanting to learn the ropes, this simulator is designed to give you a realistic stock market experience.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+1. **Real-Time Data**
+   - Fetches real-time data from Finnhub's and Coingecko's APIs.
 
-### `npm start`
+2. **Dynamic Account Balance**
+   - Your account balance is dynamic and adjusts with every buy or sell action.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Total Equity Balance**
+   - Keep track of your total equity balance, which reflects the current value of your portfolio.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **Net Loss or Net Gain**
+   - Monitor your overall net loss or net gain balance.
 
-### `npm test`
+5. **Stock Lookup**
+   - Search for stocks and view essential information, including high, low, current value, closing price, previous closing price, and percent change.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+6. **Watchlist**
+   - Add stocks to your watchlist and track their growth or loss with trendlines. For more specific information, toggle a switch.
 
-### `npm run build`
+7. **Portfolio**
+   - Buy shares, and they will be added to your portfolio. Watch your dynamic values update as you make transactions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+8. **Profit and Loss Tracking**
+   - Easily navigate to see a breakdown of your profit or loss with just one click.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React: The core framework for building the web application.
+- React-Redux: For state management and data persistence.
+- Thunk: Middleware for handling asynchronous API calls.
+- Recharts: Used for displaying chart information.
+- Styled Components: For styling the components.
+- Reactstrap: Provides pre-built React components for UI elements.
+- CSS: Used for additional styling.
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To get started with the Stock Market Trading Simulator, follow these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone this repository to your local machine.
+   ```bash
+   git clone <repository_url>
+2. Install the required dependencies.
+   `npm install`
+3. Start the development server
+   `npm start`
+   
+##Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Once the application is running, you can start simulating your stock market experience. Search for stocks, add them to your watchlist, buy shares, and track your profits and losses.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
+This project is licensed under the **MIT License**.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **[MIT License](LICENSE)**: A permissive open source license that allows you to use, modify, and distribute this software for any purpose with proper attribution to the original authors. See the [LICENSE](LICENSE) file for more details.
