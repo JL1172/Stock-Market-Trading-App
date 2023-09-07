@@ -65,7 +65,7 @@ export const buyingFormReducer = (state = initialState, action) => {
             return ({ ...state, pageIsVisible: action.payload })
         case(SELLING_SECURITY) :
         console.log(action.payload)
-            return({...state, total : state.total + action.payload[1],
+            return({...state, accountBalance : state.accountBalance + action.payload[1],
                 totalEquity : state.totalEquity - action.payload[1],
                  stockInformation : state.stockInformation.filter(n=> n.id !== action.payload[0]),
                 pageIsVisible : false })
