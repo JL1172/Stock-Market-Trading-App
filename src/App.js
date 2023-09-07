@@ -1,25 +1,46 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { API_KEY } from './@key/key';
+import { useSymbolState } from './components/customHooks/useSymbolState';
+import { StyledDiv } from './components/styled/styledComponents';
+import Header from "/src/components/Header.js";
+import SavedStocks from "/src/components/SavedStocks.js";
+import Graph from './components/Graph';
+import { connect } from 'react-redux';
+import { searchResults } from './components/actions/symbolQueryAction';
+import GatherAllCrypto from "./components/customHooks/useCyptoState"
 
-function App() {
+function App(props) {
+
+  const filteredList = () => {
+    const term = props.filteredResults.trim().toLowerCase();
+    let parent = []
+    let res = symbols.map(n=> {
+      parent.push({description : n.description, displaySymbol : n.displaySymbol})
+    })
+    if (!term) return parent;
+    else {
+    return parent.filter((n,i)=> {
+      return n.description.toLowerCase().includes(term)
+    })
+  }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StyledDiv className="App">
+      <Header  />
+      <SavedStocks />
+      <Graph  />
+      <GatherAllCrypto />
+    </StyledDiv>
   );
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    filteredResults : state.symbolQueryReducer.filteredResults,
+    symbolsData : state.crypto.symbolsData,
+  }
+}
+
+export default connect(mapStateToProps,{searchResults})(App);
