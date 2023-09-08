@@ -6,6 +6,8 @@
 Welcome to the Stock Market Trading Simulator, a web application that allows you to practice trading with real-time data from Finnhub's APIs and Coingecko's API. This project provides you with a dynamic account balance, a total equity balance, and an overall net loss or net gain balance, all of which are updated in real time as you buy or sell shares. Whether you're a seasoned trader looking to refine your strategies or a beginner wanting to learn the ropes, this simulator is designed to give you a realistic stock market experience.
 
 ## Features
+> [!NOTE]
+> This is still a work in progress, therefore I am actively fixing any bugs.
 
 1. **Real-Time Data**
    - Fetches real-time data from Finnhub's and Coingecko's APIs.
