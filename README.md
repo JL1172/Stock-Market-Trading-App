@@ -1,6 +1,7 @@
 # Stock Market Trading Simulator
 ![Screenshot (41)](https://github.com/JL1172/Stock-Market-Trading-App/assets/130790079/4524b25a-bbf4-4c43-bf19-4332ebae788e)
-![Screenshot (42)](https://github.com/JL1172/Stock-Market-Trading-App/assets/130790079/fadef87b-55bd-450a-9d42-99e9ed843675)
+![Screenshot (43)](https://github.com/JL1172/Stock-Market-Trading-App/assets/130790079/d71beb1d-ab2f-4648-848e-66d52c359dbc)
+
 
 Welcome to the Stock Market Trading Simulator, a web application that allows you to practice trading with real-time data from Finnhub's APIs and Coingecko's API. This project provides you with a dynamic account balance, a total equity balance, and an overall net loss or net gain balance, all of which are updated in real time as you buy or sell shares. Whether you're a seasoned trader looking to refine your strategies or a beginner wanting to learn the ropes, this simulator is designed to give you a realistic stock market experience.
 
